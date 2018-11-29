@@ -3,6 +3,10 @@
 #include <string.h>
 
 #define NKEYS       13
+struct keytab{
+	int num;
+	char keywrd[10];
+};
 
 
 struct keytab keywrds[NKEYS] = {

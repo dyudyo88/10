@@ -4,17 +4,11 @@
 
 int is_whitespace(char c)
 {
-	if (c == ' '  ||
-		c == '\t' ||
-		c == '\n' ||
-		c == '\r' ||
-		c == '('  ||
-		c == ')' )
-	
-	 
-	return 1; // 공백글자다.
-	return 0; // 유의미한 글자다.	
-}
+	if (c == ' '  || c == '\t' || c == '\n' || c == '\r' || c == '('  || c == ')' )
+	{	return 1; // 공백글자다.
+		return 0; // 유의미한 글자다.	
+	}
+}	
 
 int fget_word(FILE *fp, char *word)
 {
