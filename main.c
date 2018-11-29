@@ -73,6 +73,16 @@ int fget_word(FILE *fp, char *word)
  		printf("%s\n",word); //test code ->함수가 잘 실행되고 있는지 
 	 }
 
+
+while(fget_word(fp, word) != 0)
+{
+	//word processing
+	count_word(word);
+}
+print_word();
+
+
+
 //fclose 
 	fclose(fp);
 } 
